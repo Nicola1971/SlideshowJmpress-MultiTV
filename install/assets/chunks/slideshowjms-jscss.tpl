@@ -3,6 +3,7 @@
  *
  * include js and css for SlideshowJmpress multitv
  *
+ * @author      tattoocms.it
  * @category	chunk
  * @version 	2.0
  * @license 	http://www.gnu.org/copyleft/gpl.html GNU Public License (GPL)
@@ -13,7 +14,12 @@
 
 
 
-<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
+<link rel="stylesheet" type="text/css" href="/assets/templates/common/js/slideshowjms/css/style.css" />
+		<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" href="/assets/templates/common/js/slideshowjms/css/style_ie.css" />
+		<![endif]-->
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<!-- jmpress plugin -->
 		<script type="text/javascript" src="/assets/templates/common/js/slideshowjms/js/jmpress.min.js"></script>
 		<!-- jmslideshow plugin : extends the jmpress plugin -->
@@ -22,7 +28,7 @@
 		<noscript>
 			<style>
 			.step {
-				width: 100%;
+				width: 50%;
 				position: relative;
 			}
 			.step:not(.active) {
@@ -38,9 +44,6 @@
 		</noscript>
 
 		<script type="text/javascript">
-             (function($) {
-
-				$( '#jms-slideshow' ).jmslideshow();
-
-		 })(jQuery);
+			$( '#jms-slideshow' ).jmslideshow();
+		 (jQuery);
 		</script>
